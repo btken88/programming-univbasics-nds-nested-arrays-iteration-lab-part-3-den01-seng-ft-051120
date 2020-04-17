@@ -10,7 +10,9 @@ def join_nested_strings(src)
       if element.is_a? String
         string += "#{element} "
       end
+      element_index += 1
     end
+    row_index += 1
   end
   return string
 end
